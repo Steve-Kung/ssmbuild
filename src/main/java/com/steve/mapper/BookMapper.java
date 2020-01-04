@@ -20,4 +20,6 @@ public interface BookMapper {
     public List<Book> selectBooks();
 
     public Book selectBookById(@Param("bookId") int id);
+    // 根据名字查询
+    public Book selectBookByName(@Param("bookName") String name);
 }

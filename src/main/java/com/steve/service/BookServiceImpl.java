@@ -32,4 +32,8 @@ public class BookServiceImpl implements BookService {
     public Book selectBookById(int id) {
         return bookMapper.selectBookById(id);
     }
+
+    public Book selectBookByName(String name) {
+        return bookMapper.selectBookByName(name);
+    }
 }

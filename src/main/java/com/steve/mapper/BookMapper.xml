@@ -24,4 +24,8 @@
         UPDATE book SET bookName=#{bookName}, bookCounts=#{bookCounts}, bookDetails=#{bookDetails} WHERE bookId=#{bookId}
     </update>
 
+    <select id="selectBookByName" parameterType="string" resultType="Book">
+        SELECT * from ssmbuild.book WHERE bookName=#{bookName}
+    </select>
+
 </mapper>

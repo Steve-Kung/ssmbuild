@@ -19,4 +19,7 @@ public interface BookService {
     public List<Book> selectBooks();
 
     public Book selectBookById(int id);
+
+    public Book selectBookByName(String name);
+
 }
